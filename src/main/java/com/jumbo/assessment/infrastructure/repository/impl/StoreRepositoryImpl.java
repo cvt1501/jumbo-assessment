@@ -18,8 +18,8 @@ public class StoreRepositoryImpl implements StoreRepository {
 
     private final ObjectMapper mapper;
 
-    public StoreRepositoryImpl() {
-        this.mapper = new ObjectMapper();
+    public StoreRepositoryImpl(ObjectMapper mapper) {
+        this.mapper = mapper;
     }
 
     @Override

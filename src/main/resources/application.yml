@@ -4,8 +4,6 @@ server:
 spring:
   application:
     name: assessment
-  jackson:
-    property-naming-strategy: SNAKE_CASE
 
 management:
   endpoints:

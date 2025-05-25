@@ -16,6 +16,8 @@
 
 	<properties>
 		<java.version>21</java.version>
+		<instancio.version>5.4.1</instancio.version>
+		<logstash.version>8.0</logstash.version>
 	</properties>
 
 	<dependencies>
@@ -40,7 +42,7 @@
 		<dependency>
 			<groupId>org.instancio</groupId>
 			<artifactId>instancio-junit</artifactId>
-			<version>RELEASE</version>
+			<version>${instancio.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -53,7 +55,7 @@
 		<dependency>
 			<groupId>net.logstash.logback</groupId>
 			<artifactId>logstash-logback-encoder</artifactId>
-			<version>8.0</version>
+			<version>${logstash.version}</version>
 		</dependency>
 
 		<dependency>

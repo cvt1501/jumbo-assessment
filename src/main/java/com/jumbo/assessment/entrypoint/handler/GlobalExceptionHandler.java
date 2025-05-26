@@ -23,6 +23,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(MissingServletRequestParameterException.class)
     public ResponseEntity<DefaultResponse<String>> handleMissingParam(MissingServletRequestParameterException ex) {
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new DefaultResponse<>("Missing required parameter: " + ex.getParameterName(), "Please provide the required query parameter."));
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new DefaultResponse<>("Missing required parameter: " + ex.getParameterName(), "Please provide the required query parameter"));
     }
 }

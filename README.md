@@ -42,7 +42,7 @@ This will:
 
 ## Available Endpoints
 
-### `GET /stores/closest`
+### `GET /api/stores/closest`
 
 This is the only available endpoint in the application.
 
@@ -68,7 +68,7 @@ This will:
 ## Test the API
 
 ```bash
-curl http://localhost:8080/stores/closest?longitude=5.804116&latitude=51.456157
+curl http://localhost:8080/api/stores/closest?longitude=5.804116&latitude=51.456157
 ```
 
 ## Structured Logs

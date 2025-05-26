@@ -1,6 +1,5 @@
 package com.jumbo.assessment.domain.service;
 
-import com.jumbo.assessment.domain.dto.StoreWrapper;
 import com.jumbo.assessment.domain.entity.Store;
 import com.jumbo.assessment.infrastructure.repository.StoreRepository;
 import org.slf4j.Logger;
@@ -20,12 +19,13 @@ public class StoreService {
         this.repository = repository;
     }
 
-    public StoreWrapper findClosest(double latitude, double longitude) {
+    public List<Store> findClosest(double latitude, double longitude) {
         log.debug("Searching closest store for location: latitude={}, longitude={}",
                 latitude, longitude);
 
-        List<Store> stores = this.repository.loadJson().stores();
-        List<Store> closestStores = stores.stream()
+        List<Store> stores = this.repository.loadStore();
+
+        return stores.stream()
                 .map(store -> {
                     try {
                         double storeLatitude = Double.parseDouble(store.latitude());
@@ -45,8 +45,6 @@ public class StoreService {
                 .limit(5)
                 .map(Map.Entry::getKey)
                 .toList();
-
-        return new StoreWrapper(closestStores);
     }
 
     /**

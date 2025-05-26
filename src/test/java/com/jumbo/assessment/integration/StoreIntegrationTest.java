@@ -13,7 +13,6 @@ import java.nio.file.Path;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class StoreIntegrationTest {
-
     @LocalServerPort
     private int port;
 

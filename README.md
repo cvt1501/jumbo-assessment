@@ -63,7 +63,7 @@ mvn clean test
 ```
 
 This will:
-- Run the unit tests of this application.
+- Run tests of this application.
 
 ## Test the API
 

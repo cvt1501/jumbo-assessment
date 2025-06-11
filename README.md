@@ -1,4 +1,4 @@
-# Jumbo Assessment
+# Store Service
 
 This project demonstrates:
 

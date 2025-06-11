@@ -1,4 +1,4 @@
-package com.jumbo.assessment.infrastructure.repository;
+package com.jumbo.assessment.domain.repository;
 
 import com.jumbo.assessment.domain.entity.Store;
 import org.springframework.stereotype.Repository;

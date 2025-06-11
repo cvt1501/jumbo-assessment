@@ -1,7 +1,7 @@
 package com.jumbo.assessment.domain.service;
 
 import com.jumbo.assessment.domain.entity.Store;
-import com.jumbo.assessment.infrastructure.repository.StoreRepository;
+import com.jumbo.assessment.domain.repository.StoreRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

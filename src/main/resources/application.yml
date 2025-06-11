@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: assessment
+  cache:
+    type: caffeine
+    cache-names: stores
+    caffeine:
+      spec: maximumSize=1,expireAfterWrite=1d
 
 management:
   endpoints:
@@ -14,9 +19,3 @@ management:
     export:
       prometheus:
         enabled: true
-
-logging:
-  level:
-    root: INFO
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} %X{traceId} %X{spanId} %-5level %logger{36} - %msg%n"

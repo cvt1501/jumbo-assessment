@@ -2,7 +2,7 @@ package com.jumbo.assessment.unit;
 
 import com.jumbo.assessment.domain.entity.Store;
 import com.jumbo.assessment.domain.service.StoreService;
-import com.jumbo.assessment.infrastructure.repository.StoreRepository;
+import com.jumbo.assessment.domain.repository.StoreRepository;
 import org.instancio.Instancio;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

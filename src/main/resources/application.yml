@@ -4,11 +4,6 @@ server:
 spring:
   application:
     name: assessment
-  cache:
-    type: caffeine
-    cache-names: stores
-    caffeine:
-      spec: maximumSize=1,expireAfterWrite=1d
 
 management:
   endpoints:
